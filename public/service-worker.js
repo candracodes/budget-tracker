@@ -1,3 +1,4 @@
+//TODO: Getting an offline error for transaction because of line 54. Cover with tutor
 console.log("service-worker.js is working!");
 
 // Account for all files in public folder
