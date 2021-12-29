@@ -64,7 +64,7 @@ This project is created using the following packages
 
 ## Licensing
 The project is made possible with the following Licensing:
-- [MIT](license.txt)
+- [MIT](LICENSE)
 
 
 
