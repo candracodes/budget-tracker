@@ -5,9 +5,9 @@
 This application adds functionality to an existing Budget Tracker application to allow for offline access and functionality.
 
 ## TODO:
-1. Resolve heroku issue (does it need a key + value like MongoAtlas) ❌
-2. Resolve offline error: "service-worker.js:55  Uncaught (in promise) TypeError: Failed to fetch at service-worker.js:55" ❌
-3. Resolve offline error: "index.js:116 POST http://localhost:3000/api/transaction net::ERR_FAILED" ❌
+1. Resolve heroku issue (does it need a key + value like MongoAtlas) ✅
+2. Resolve offline error: "service-worker.js:55  Uncaught (in promise) TypeError: Failed to fetch at service-worker.js:55" ✅
+3. Resolve offline error: "index.js:116 POST http://localhost:3000/api/transaction net::ERR_FAILED" ✅
 4. Resolve manifest error: Actual height (169px) of Icon http://localhost:3000/icons/icon-192x192.png does not match specified height (192px) ❌
 5. Resolve manifest error: Actual height (452px) of Icon http://localhost:3000/icons/icon-512x512.png does not match specified height (512px) ❌
 

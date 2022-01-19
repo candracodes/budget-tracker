@@ -48,20 +48,24 @@ self.addEventListener(`activate`, event => {
 });
 
 self.addEventListener(`fetch`, event => {
+    console.log(event.request.method);
+    // This was an unsuccessful if statement that caused complete chaos. Removing it to remove offline errors
+    /*
     if (
         event.request.method !== `GET` ||
         !event.request.url.startsWith(self.location.origin)
     ) {
+        console.log(event.request);
         event.respondWith(fetch(event.request));
         return;
     }
-
+    */
     if (event.request.url.includes(`/api/transaction`)) {
         event.respondWith(
             caches.open(RUNTIME).then(cache =>
                 fetch(event.request)
                     .then(response => {
-                        cache.put(event.request, response.clone());
+                        cache.put(event.request.url, response.clone());
                         return response;
                     })
                     .catch(() => caches.match(event.request))
